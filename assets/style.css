@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: "Raleway";
+    src: url('../assets/fonts/Raleway-VariableFont_wght.woff');
+    src: url('../assets/fonts/Raleway-VariableFont_wght.ttf') format('truetype'); 
+    /* pas de format otf sur Google Fonts */
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+/* Police titres */
+h1, h2, h3{
+    font-family: Lato;
+}
+
+h1, h2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+h3{
+    color:rgb(23, 171, 179);
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(227, 227, 227);
+}
+
+body{
+    background-color: rgb(227,227,227);
+    display:flex ;
+    justify-content: center;
+}
+
+.cv-container {
+    width: 1160px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(23, 171, 179);
+    padding: 20px;
+}
+
+.profile-pic{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid rgb(255, 255, 255);
+    cursor: zoom-in;
+    overflow: hidden;
+    margin-left: 80px;
+}
+
+.profile-pic__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: zoom-in;
+}
+.profile-pic__img:hover {
+    transform: scale(1.1);
+}
+
+.profil-info {
+    margin-left: 200px;
+    color: rgb(255, 255, 255);
+    font-family: Raleway;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 15px;
+    max-width: 400px;
+}
+
+.info-item {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.main {
+    display: flex;
+}
+
+/* COLONNE GAUCHE */
+
+.sidebar {
+    width: 40%;
+    padding: 20px;
+    background-color:rgb(245,245,245);
+}
+
+.sidebar h3 {
+    color: rgb(23, 171, 179);
+    margin-bottom: 10px;
+    font-family: Lato;
+}
+.bold{
+    font-weight: bold;
+}
+.none{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+/* Justification des textes à droite  */
+.space{
+    font-family: Raleway;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blue{
+    color: rgb(23, 171, 179);
+}
+
+/* Mise en place de puces carrées */
+.square {
+  list-style: none;       
+  padding-left: 1.2em;   
+  font-family: Raleway; 
+}
+
+.square li::before {
+  content: "■";   
+  color: rgb(23, 171, 179); 
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+section{
+    margin-bottom: 50px;
+}
+
+/* COLONNE DROITE */
+.right-side {
+  width: 100%;
+  padding: 20px;
+  gap: 5px;
+}
+
+h3 {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.indent{
+    text-indent: 20px;
+}
+
+p {
+  text-align: justify;
+  margin-bottom: 15px;
+  font-family: Raleway;
+}
+
+.item {
+  margin-bottom: 10px;
+  font-family: Raleway;
+}
+
+.item:hover {
+  background: rgb(225, 225, 225);
+  border-left: 4px solid rgb(23, 171, 179);
+}
+
+.date{
+    float: right;
+    color: rgb(23, 171, 179);
+}
+
+.lieu{
+    font-style: italic;
+}
+
+
+/* Footer */
+.footer {
+    background: rgb(23, 171, 179);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social-mediag:hover {
+    opacity: 0.8;
+}
+
+.logo {
+    width: 30px;
+    margin: 0 5px;
+}
+
+.maj{
+    font-family: Raleway;
+    font-style: italic;
+    font-size: 0.7rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
