@@ -65,32 +65,32 @@ header {
     cursor: zoom-in;
 }
 .profile-pic__img:hover {
-    transform: scale(1);
+    transform: scale(1.1);
 }
 
 .profil-info {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
     margin-left: 200px;
-}
-
-.col{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
-    margin-top: 15px;
-}
-    
-.col__1{
     color: rgb(255, 255, 255);
     font-family: Raleway;
-    text-decoration:none;
 }
 
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 15px;
+    max-width: 400px;
+}
+
+.info-item {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+
 .main {
-  display: flex;
+    display: flex;
 }
 
 /* COLONNE GAUCHE */
@@ -112,13 +112,20 @@ header {
 .none{
     list-style: none;
     margin-bottom: 20px;
+}
+
+/* Justification des textes à droite  */
+.space{
     font-family: Raleway;
+    display: flex;
+    justify-content: space-between;
 }
 
-.right{
-    float: right;
+.blue{
+    color: rgb(23, 171, 179);
 }
 
+/* Mise en place de puces carrées */
 .square {
   list-style: none;       
   padding-left: 1.2em;   
@@ -134,8 +141,12 @@ header {
   margin-left: -1em;
 }
 
-.sidebar li {
+li {
     margin-bottom: 5px;
+}
+
+section{
+    margin-bottom: 50px;
 }
 
 /* COLONNE DROITE */
@@ -150,16 +161,18 @@ h3 {
   padding-bottom: 5px;
 }
 
+.indent{
+    text-indent: 20px;
+}
+
 p {
   text-align: justify;
-  text-indent: 20px;
   margin-bottom: 15px;
   font-family: Raleway;
 }
 
 .item {
   margin-bottom: 10px;
-  padding: 10px;
   font-family: Raleway;
 }
 
@@ -176,6 +189,8 @@ p {
 .lieu{
     font-style: italic;
 }
+
+
 /* Footer */
 .footer {
     background: rgb(23, 171, 179);
@@ -190,13 +205,12 @@ p {
 }
 
 .social-mediag:hover {
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .logo {
     width: 30px;
     margin: 0 5px;
-    transition: opacity 0.3s;
 }
 
 .maj{
